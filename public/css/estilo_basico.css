@@ -1,0 +1,194 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    text-align: center;
+    color: #000000;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 28px;
+}
+
+h2 {
+    color: #333333;
+    font-size: 22px;
+}
+
+button{
+    width: 5%;
+    padding: 10px 15px;
+    margin: 10px 0px 10px 48%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #333;
+}
+
+input {
+    width: 20%;
+    padding: 10px 15px;
+    margin: 10px 0px 10px 40%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #333;
+}
+
+.borda {
+    border: solid 1px #000000;
+}
+
+button {
+    background-color: #000000;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #96661f;
+}
+
+::placeholder {
+    color: #333333;
+    opacity: 1;
+}
+
+
+.topo {
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    padding: 20px 0px 10px 0px;
+}
+
+.logo {
+    width: 50px;
+    float: left;
+    margin-left: 40px;
+}
+
+.menu {
+    float: right;
+    margin-right: 40px;
+    margin-top: 35px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #070000;
+}
+
+.menu a:hover {
+    color: #ce800a;
+}
+
+.conteudo-destaque {
+    width: 100%;
+    height: 100%;
+    min-height: 800px; 
+}
+
+.centro {
+    float:left;
+    background-color: #ce800a;
+    width: 100%;
+    height: 100%;
+}
+
+.informacoes {
+    margin: 100px 40px 40px 40px;
+}
+
+.informacao-pagina {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #000000;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    text-align: left;
+}
+
+tbody tr {
+    margin-bottom: 20px;
+    display: table-row;
+}
+
+td {
+    text-align: left;
+}
+
+/*para telas menores (móveis), você pode ajustar a exibição da tabela */
+@media screen and (max-width: 767px) {
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    th, td {
+        text-align: left;
+    }
+
+    tbody tr {
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    td {
+        text-align: left;
+        padding-left: 50%;
+    }
+
+    td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+}
