@@ -13,6 +13,7 @@ Este projeto Laravel foi desenvolvido para fornecer uma solução de rastreament
 - [PHP](https://www.php.net/) >= 7.4
 - [Composer](https://getcomposer.org/)
 - [MySQL](https://www.mysql.com/) ou outro sistema de gerenciamento de banco de dados suportado pelo Laravel.
+- [Laravel](https://laravel.com/) >= 7.0.0
 
 ## Configuração
 
@@ -29,25 +30,13 @@ Este projeto Laravel foi desenvolvido para fornecer uma solução de rastreament
     composer install
     ```
 
-3. **Copie o arquivo de exemplo `.env.example` para `.env` e configure as variáveis de ambiente, incluindo as configurações do banco de dados:**
-
-    ```bash
-    cp .env.example .env
-    ```
-
-4. **Editando arquivo PHP .ini:**
-
-    ```bash
-    php artisan key:generate
-    ```
-
-5. **Execute as migrações do banco de dados para criar as tabelas necessárias:**
+3. **Execute as migrações do banco de dados para criar as tabelas necessárias:**
 
     ```bash
     php artisan migrate
     ```
 
-6. **Inicie o servidor de desenvolvimento:**
+4. **Inicie o servidor de desenvolvimento:**
 
     ```bash
     php artisan serve
@@ -61,10 +50,12 @@ Este projeto Laravel foi desenvolvido para fornecer uma solução de rastreament
 2. Insira o CPF na barra de pesquisa.
 3. Visualize os detalhes da encomenda, incluindo o histórico de rastreamento.
 
-## Contribuição
+## Solução de Erros
 
-Sinta-se à vontade para contribuir com melhorias, correções de bugs ou novas funcionalidades. Abra uma issue ou envie um pull request!
+### 1. Acesso a API
 
-## Licença
+Caso tenha problemas para acessar a API da aplicação, encontrei uma solução , adicionando o arquivo "cacert.pem" , com esse arquivo adicionado, abra o seu arquivo "php.ini" busque pela linha "openssl.cafile=" , e aponte para  o caminho em que se encontra o arquivo "cacert.pem" , dentro da pasta do projeto.
 
-Este projeto é licenciado sob a [Licença MIT](LICENSE).
+### 2. Outros Problemas
+
+Se encontrar outros problemas, consulte a [documentação do Laravel](https://laravel.com/docs) ou abra uma issue no repositório.
